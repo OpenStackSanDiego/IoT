@@ -38,15 +38,12 @@ Pull up the IoT console and let's setup the IoT device! Replace XXX with your IP
 
 You should now see the IoT console.
 
+There are a number of sensors already online and ready to go. These include some temperature, voltage, and a camera. Double click on the README to get the details on each workflow and things to setup in each workflow.
+
+* Sensor Sample - read and alert on temperature and voltage changes.
+* Twitter Alerting - automatically post on Twitter
+* Camera - grab images from a camera and post them to Twitter
+* Web Service - make services available on the Internet and have another device use the service
+* Database - save and retrieve data to/from a database
 
 
-Twitter sentiment
-https://www.ibm.com/blogs/bluemix/2015/11/analyze-tweets-in-30-minutes/
-
-Weather Underground
-
-Messages between devices
-
-Posting to MongoDB
-
-Posting pictures to webpage
