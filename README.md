@@ -20,7 +20,7 @@ Start up your first IoT instance!
 * Project->Compute->Instance->"Launch Instance"
 * Instance Name = "IoT"
 * Count = 1
-* Source = "iot-node-red"
+* Source = "iot-master-snapshot" (change source from Image to Instance Snapshot to see this option)
 * Flavor = "m1.small"
 * Take note of the IP address of your new IoT instance
 
