@@ -46,4 +46,7 @@ There are a number of sensors already online and ready to go. These include some
 * Web Service - make services available on the Internet and have another device use the service
 * Database - save and retrieve data to/from a database
 
+Bonus activites!
+ * Weather (install via ManagePalate) http://flows.nodered.org/node/node-red-node-weather-underground
+ * Save/Get files to/from OpenStack Object Storage and HTTP
 
