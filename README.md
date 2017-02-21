@@ -11,7 +11,7 @@ At the following etherpad, type in your team name next to an OpenStack user acco
 
 https://etherpad.openstack.org/p/san-diego-iot
 
-Use the login above (teamXX) to log into the cloud console at:
+Use the login above (userXX) to log into the cloud console at:
 
 http://cloud.openstacksandiego.org
 
