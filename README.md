@@ -49,4 +49,7 @@ There are a number of sensors already online and ready to go. These include some
 Bonus activites!
  * Weather (install via ManagePalate) http://flows.nodered.org/node/node-red-node-weather-underground
  * Save/Get files to/from OpenStack Object Storage and HTTP
+ * Write a Twitter robot that responds with the current weather in response to a tweet.
+ * Write a Twitter robot that speaks in Yoga! https://market.mashape.com/ismaelc/yoda-speak
+ * Check out mashape.com for other APIs to use...
 
