@@ -7,8 +7,14 @@ yum install epel-release -y
 
 yum install nodejs -y
 
+yum install screen -y
+
 yum update -y
 
 Copy over the flows from git in /root/.node-red/flows_iot.json
 
+screen
+
 node-red
+
+ctrl-a ctrl-d
