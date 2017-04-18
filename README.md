@@ -27,13 +27,14 @@ You'll need to open the firewall to get access to the IoT device. The IoT device
 * Port: 1880
 * Remote CIDR: <IP address of your laptop>
 
-Start up your first IoT instance!
+Start up your first IoT instance! Click the "^" (up arrow) to select a source/flavor/network.
 
 * Project->Compute->Image->"Launch" the image is called "IoT-master"
 * Instance Name = "IoT"
 * Count = 1
 * Source = "IoT-master" (change source from Image to Instance Snapshot to see this option)
 * Flavor = "m1.small"
+* Network = "internal"
 * Actions->"Associate Floating IP" (press '+' to allocate yourself a public IP)
 * Take note of the IP address of your new IoT instance 147.75.64.XXX
 
