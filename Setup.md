@@ -15,6 +15,10 @@ Copy over the flows from git in /root/.node-red/flows_iot.json
 
 screen
 
+npm install node-red-node-random
+
+npm install node-red-node-mongodb
+
 node-red
 
 ctrl-a ctrl-d
