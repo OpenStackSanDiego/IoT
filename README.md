@@ -29,10 +29,10 @@ You'll need to open the firewall to get access to the IoT device. The IoT device
 
 Start up your first IoT instance!
 
-* Project->Compute->Image->"Launch" the image snapshot called "IoT-master-snapshot"
+* Project->Compute->Image->"Launch" the image is called "IoT-master"
 * Instance Name = "IoT"
 * Count = 1
-* Source = "IoT-master-snapshot" (change source from Image to Instance Snapshot to see this option)
+* Source = "IoT-master" (change source from Image to Instance Snapshot to see this option)
 * Flavor = "m1.small"
 * Actions->"Associate Floating IP" (press '+' to allocate yourself a public IP)
 * Take note of the IP address of your new IoT instance 147.75.64.XXX
