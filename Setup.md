@@ -9,6 +9,6 @@ yum install nodejs -y
 
 yum update -y
 
-Copy over the flows
+Copy over the flows from git in /root/.node-red/flows_iot.json
 
 node-red
