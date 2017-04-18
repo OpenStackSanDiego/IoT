@@ -35,6 +35,10 @@ Start up your first IoT instance! Click the "^" (up arrow) to select a source/fl
 * Source = "IoT-master" (change source from Image to Instance Snapshot to see this option)
 * Flavor = "m1.small"
 * Network = "internal"
+* "Launch Instance"
+
+Connect the IoT device to the Internet...
+
 * Actions->"Associate Floating IP" (press '+' to allocate yourself a public IP)
 * Take note of the IP address of your new IoT instance 147.75.64.XXX
 
