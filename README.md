@@ -15,16 +15,6 @@ Use the login above (userXX) to log into the cloud console at:
 
 http://cloud.openstacksandiego.org
 
-Start up your first IoT instance!
-
-* Project->Compute->Image->"Launch" the image snapshot called "IoT-master-snapshot"
-* Instance Name = "IoT"
-* Count = 1
-* Source = "IoT-master-snapshot" (change source from Image to Instance Snapshot to see this option)
-* Flavor = "m1.small"
-* Actions->"Associate Floating IP" (press '+' to allocate yourself a public IP)
-* Take note of the IP address of your new IoT instance 147.75.64.XXX
-
 Lookup the IP address of your laptop...
 
 * https://www.google.com/#q=whats+my+ip
@@ -36,6 +26,16 @@ You'll need to open the firewall to get access to the IoT device. The IoT device
 * Defaults: Custom TCP/Ingress/Port (no need to change these)
 * Port: 1880
 * Remote CIDR: <IP address of your laptop>
+
+Start up your first IoT instance!
+
+* Project->Compute->Image->"Launch" the image snapshot called "IoT-master-snapshot"
+* Instance Name = "IoT"
+* Count = 1
+* Source = "IoT-master-snapshot" (change source from Image to Instance Snapshot to see this option)
+* Flavor = "m1.small"
+* Actions->"Associate Floating IP" (press '+' to allocate yourself a public IP)
+* Take note of the IP address of your new IoT instance 147.75.64.XXX
 
 Pull up the IoT console and let's setup the IoT device! Replace XXX with your IP address.
 
