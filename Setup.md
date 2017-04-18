@@ -1,5 +1,7 @@
 
-Create a new CentOS machine called "IoT" with a floating IP.
+Create a new CentOS machine called "IoT" with a floating IP and disable SELinux.
+
+https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-centos-7
 
 As root, run the following:
 
@@ -11,7 +13,7 @@ yum install screen -y
 
 yum update -y
 
-Copy over the flows from git in /root/.node-red/flows_iot.json
+Copy over the flows from git into /root/.node-red/
 
 screen
 
