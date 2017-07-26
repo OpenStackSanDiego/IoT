@@ -13,7 +13,7 @@ yum install screen -y
 
 yum update -y
 
-Copy over the flows from git into /root/.node-red/
+Exit out of root and continue as a regular user (centos)
 
 screen
 
@@ -25,6 +25,8 @@ npm install node-red-node-mongodb
 
 npm install node-red-node-pi-sense-hat-simulator
 
-node-red
+wget https://raw.githubusercontent.com/OpenStackSanDiego/IoT/master/flows_iot.json
+
+node-red flows_iot.json
 
 ctrl-a ctrl-d
