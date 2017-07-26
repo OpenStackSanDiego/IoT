@@ -17,9 +17,13 @@ Copy over the flows from git into /root/.node-red/
 
 screen
 
+cd ~/.node-red
+
 npm install node-red-node-random
 
 npm install node-red-node-mongodb
+
+npm install node-red-node-pi-sense-hat-simulator
 
 node-red
 
