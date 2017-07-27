@@ -3,17 +3,17 @@ The Internet of Things (IoT) consists of IP (network) connected devices that per
 
 First off, your team is going to need a name and a Twitter account. Pick a name and create a Twitter account at www.twitter.com. Your IoT devices will be posting messages to this Twitter account so you can keep track of what they are doing.
 
-* Send a Tweet with the tag "#SanDiegoIoT" once your account is created!
+* Send a Tweet with the tag "#OpenStackIoT" once your account is created!
 
 One easy way to setup IoT devices is with node-red (www.nodered.org), a visual for wiring the Internet of Things. Through this visual interface, an IoT device and be setup to run a complete workflow. Each group will be assigned a pool of IoT devices to use.
 
-At the following etherpad, type in your team name next to an OpenStack user account name. This is just to keep track of who is using which OpenStack account. The password for the account is on the whiteboard.
+At the following etherpad, type in your team name next to an OpenStack user account name. This is just to keep track of who is using which OpenStack account on which lab server. The password for the account is on the whiteboard.
 
-https://etherpad.openstack.org/p/san-diego-iot
+https://etherpad.openstack.org/p/openstack-iot
 
 Use the login above (userXX) to log into the cloud console at:
 
-http://cloud.openstacksandiego.org
+http://<IP_OF_ASSIGNED_LAB>
 
 Lookup the IP address of your laptop...
 
@@ -27,17 +27,39 @@ You'll need to open the firewall to get access to the IoT device. The IoT device
 * Port: 1880
 * Remote CIDR: <IP address of your laptop>
 
+We'll need to create a virtual network to run our IoT devices.
+
+* Project->Network->Network Topology->Create Network
+* Network Name: IoT-net
+* Subnet Name: 192.168.1.0/24
+* Enable DHCP: Checked
+* DHCP Pool: 192.168.1.100,192.168.1.200
+* DNS Name Servers: 8.8.8.8
+
+And create a virtual router to connect our IoT devices to the Internet.
+
+* Project->Network->Network Topology->Create Router
+* Network Name: IoT-gw
+* External Network: public
+* "Create Router"
+
+And now connect the virtual router to the IoT-net.
+
+* Project->Network->Network Topology
+* Click "IoT-gw" icon and select "Add Interface"
+* Subnet: IoT-gw
+
 Start up your first IoT instance! Click the "^" (up arrow) to select a source/flavor/network.
 
-* Project->Compute->Image->"Launch" the image is called "IoT-master"
+* Project->Compute->Image->"Launch" the image is called "IoT"
 * Instance Name = "IoT"
 * Count = 1
-* Source = "IoT-master" (change source from Image to Instance Snapshot to see this option)
+* Source = "IoT" (change source from Image to Instance Snapshot to see this option)
 * Flavor = "m1.small"
 * Network = "internal"
 * "Launch Instance"
 
-Connect the IoT device to the Internet...
+Connect the IoT device to the Internet by allocating it an external IP...
 
 * Actions->"Associate Floating IP" (press '+' to allocate yourself a public IP)
 * Take note of the IP address of your new IoT instance 147.75.64.XXX
